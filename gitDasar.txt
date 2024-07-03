@@ -1,0 +1,42 @@
+Git status -> Digunakan untuk mengecek perubahan apa saja yang terjadi seperti, ada file yang diubah atau sbg
+No Commits yet -> Tidak ada satupun riwayat
+nothing to commmit -> Tidak apapun yang bisa disimpan (tidak ada apapun file yg kita ubah)
+Untracked files -> Artinya ada file baru
+git add (nama file) -> Memindahkan ke staging index
+git commit -m "(pesan keterangan)" -> Menambah ke repository secara permanent/Commit ke repository 
+git diff -> Digunakan untuk melihat perubahan yang terjadi pada file nya
+git add .->Jika menginginkan semua perubahan dipindah ke staging index
+git clean -f -> Untuk membatalkan/menghapus penambahan file di staging index
+git restore "namafilenya" -> Untuk membatalkan perubahan file di staging index dan juga berguna membatalkan penghapusan file
+git restore --staged "namafilenya" -> Mengembalikan file dari staging ke working directory untuk dilakukan perubahan
+git log -> Untuk melihat semua riwayat commit
+git log --oneline -> Untuk melihat commit log message nya saja (versi sederhana)
+git show "hash" -> Untuk melihat detail commit
+git diff "hash1" "hash2" -> Untuk membandingkan hasil di commit
+git reset <mode> "hash" -> Untuk melakukan reset commit
+git commit --amend -> Untuk mengatasi kelupaan pada file yang sudah di commit
+git checkout hash -- namafile -> Untuk melihat versi file pada commit sebelumnya
+git checkout hash -> Jika kita ingin menuju ke snapshot tertentu
+git checkout namabranch -> Jika ingin kembali ke snapshot paling awal
+git revert "hash" -> Untuk membatalkan commit yang sudah kita lakukan 
+git bale "namafile" -> Untuk mengetahui siapa aja yg mengerjakan sebuah codingan
+
+The Three States
+Git memiliki tiga state terhadap file kita: modified, staged, commited
+- Modified artinya kita mengubah (menambah, mengedit, menghapus) file, namun belum disimpan secara permanen ke repository
+- Staged artinya kita menandai modifikasi yang kita lakukan terhadap file akan disimpan secara permanen ke repository
+- Committed artinya data sudah aman disimpan di repository
+
+Three Section
+Tiga state sebelumnya di dalam Git dilakukan di section yang berbeda-beda, yaitu Working Directory, Staging Area dan Repository
+- Saat kita melakukan modifikasi file, itu dilakukan di working directory
+- Staging Area merupakan section dimana file sudah disiapkan untuk disimpan secara permanen, di Staging Area semua informasi perubahan file akan disimpan
+- Repository merupakan tempat dimana semua file dan database riwayat versi file disimpan
+
+Mode
+Git memiliki tiga mode untuk melakukan reset commit
+soft -> Perubahannya masih ada di staging index
+mixed -> Perubahannya masih ada di working directory
+hard -> Perubahannya otomatis hilang semuanya
+
+.gitignore -> Berguna untuk melakukan igonere file yang tidak penting yg dimasukkan ke repository
