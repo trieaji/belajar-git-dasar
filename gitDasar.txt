@@ -20,6 +20,12 @@ git checkout hash -> Jika kita ingin menuju ke snapshot tertentu
 git checkout namabranch -> Jika ingin kembali ke snapshot paling awal
 git revert "hash" -> Untuk membatalkan commit yang sudah kita lakukan 
 git bale "namafile" -> Untuk mengetahui siapa aja yg mengerjakan sebuah codingan
+git branch --show-current -> Untuk melihat branch saat ini
+git branch "namabranchnya" -> Untuk membuat branch
+git branch --list -> Untuk melihat semua branch yang ada di repository kita
+git switch "namabranch" atau git checkout "namabranch" -> Untuk pindah ke branch lain
+git branch -m "namabranchbaru" -> Untuk mengubah nama branch, tetapi harus pindah terlebih dahulu ke branch yg ingin kita ubah namanya
+git branch -d "namabranch" -> Untuk menghapus branch, kita perlu keluar terlebih dahulu dari branch tersebut
 
 The Three States
 Git memiliki tiga state terhadap file kita: modified, staged, commited
