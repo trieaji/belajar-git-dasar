@@ -26,6 +26,8 @@ git branch --list -> Untuk melihat semua branch yang ada di repository kita
 git switch "namabranch" atau git checkout "namabranch" -> Untuk pindah ke branch lain
 git branch -m "namabranchbaru" -> Untuk mengubah nama branch, tetapi harus pindah terlebih dahulu ke branch yg ingin kita ubah namanya
 git branch -d "namabranch" -> Untuk menghapus branch, kita perlu keluar terlebih dahulu dari branch tersebut
+git merge "namabranch" -> Untuk melakukan branch
+git merge --abort -> Jika ingin membatalkan merge
 
 The Three States
 Git memiliki tiga state terhadap file kita: modified, staged, commited
@@ -46,3 +48,8 @@ mixed -> Perubahannya masih ada di working directory
 hard -> Perubahannya otomatis hilang semuanya
 
 .gitignore -> Berguna untuk melakukan igonere file yang tidak penting yg dimasukkan ke repository
+
+branch "feature/a" merubah file1.txt
+branch "feature/a" merubah file2.txt
+branch "feature/b" merubah file1.txt
+branch "feature/b" merubah file3.txt
