@@ -2,3 +2,4 @@ Menambah file 2.txt
 Lho
 Feature 2
 Feature A
+Feature C
