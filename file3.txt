@@ -2,3 +2,4 @@ ini adalah file3.txt
 Ada yang kurang nih
 Feature 3
 Feature B
+Feature C
