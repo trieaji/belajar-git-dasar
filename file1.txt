@@ -6,3 +6,4 @@ Feature B
 Feature C
 Master
 Master lagi untuk rebase
+Feature merge squash
