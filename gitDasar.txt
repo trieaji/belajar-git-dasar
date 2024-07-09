@@ -28,6 +28,19 @@ git branch -m "namabranchbaru" -> Untuk mengubah nama branch, tetapi harus pinda
 git branch -d "namabranch" -> Untuk menghapus branch, kita perlu keluar terlebih dahulu dari branch tersebut
 git merge "namabranch" -> Untuk melakukan branch
 git merge --abort -> Jika ingin membatalkan merge
+git cherry-pick commitId -> Jika tidak ingin merge semua perubahan
+git tag "tagName" commitId -> Untuk membuat tag
+git tag -l -> Untuk menampilkan semua tag
+git checkout tagName -> Untuk melihat snapshot sebelumnya di Git
+git tag -d namatag -> Menghapus tag 
+git stash push -m "(Pesan keterangan)" -> Untuk menyimpan perubahan ke stash
+git stash list -> Untuk melihat semua stash
+git stash show stashId -> Untuk melihat perubahan yang terjadi di stash
+git stash apply stashId -> Untuk mengambil perubahan di stash
+git stash drop stashId -> Untuk menghapus stash
+git stash clear -> Untuk menghapus semua stash
+git rebase "namabranch" -> Untuk melakukan rebase
+git merge --squash "namabranch" -> Untuk melakukan squash ketika merge 
 
 The Three States
 Git memiliki tiga state terhadap file kita: modified, staged, commited
@@ -53,3 +66,24 @@ branch "feature/a" merubah file1.txt
 branch "feature/a" merubah file2.txt
 branch "feature/b" merubah file1.txt
 branch "feature/b" merubah file3.txt
+
+branch "feature/c" merubah file1.txt
+branch "feature/c" merubah file2.txt
+branch "feature/c" merubah file3.txt
+
+STASH -> Perubahan file yang belum siap commit dan juga tidak mau dihapus
+Stash berfungsi untuk penyimpanan sementara (jika kita masih ragu terhadap file yg belum siap commit dan juga tidak mau dihapus)
+branch "master" merubah file1.txt
+branch "feature/d" merubah file1.txt -> lngsung commit supaya berada di staging index
+branch "feature/d" merubah file2.txt -> blum di commit
+
+Rebase
+Rebase berfungsi selayaknya merge tapi kerja rebase terbalik dengan cara kerja merge
+branch "master" merubah file1.txt
+branch "feature/rebase" merubah file2.txt -> lalu commit
+branch "feature/rebase" merubah file3.txt -> lalu commit
+
+Squash berfungsi untuk melakukan penggabungan commit tersebut menjadi 1 commit saja
+branch "master" merubah version.txt -> lalu commit
+branch "feature/merge-squash" merubah file1.txt -> lalu commit
+branch "feature/merge-squash" merubah file2.txt -> lalu commit
