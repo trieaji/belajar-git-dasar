@@ -40,7 +40,20 @@ git stash apply stashId -> Untuk mengambil perubahan di stash
 git stash drop stashId -> Untuk menghapus stash
 git stash clear -> Untuk menghapus semua stash
 git rebase "namabranch" -> Untuk melakukan rebase
-git merge --squash "namabranch" -> Untuk melakukan squash ketika merge 
+git merge --squash "namabranch" -> Untuk melakukan squash ketika merge
+ssh-keygen -> Untuk membuat ssh key dan membuanya di terminal
+git remote add "nama" ssh-url -> Untuk menambah repository. Biasanya untuk "nama" orang-orang menggunakan yg umum yaitu, "origin"
+git remote -> Untuk melihat remote repository yang ada di git project
+git remote get-url "nama" -> Untuk melihat detail remote repository. Biasanya untuk "nama" orang-orang menggunakan yg umum yaitu, "origin"
+git remote rm "nama" -> Untuk menghapus remote repository. Biasanya untuk "nama" orang-orang menggunakan yg umum yaitu, "origin"
+git push namaremote localbranch -> Untuk mengirim perubahan branch ke remote repository dengan nama branch yang sama. Biasanya untuk "namaremote" orang-orang menggunakan yg umum yaitu, "origin"
+git push namaremote localbranch:remotebranch -> Untuk mengirim perubahn branch ke remote repository dengan nama branch yang berbeda. Biasanya untuk "namaremote" orang-orang menggunakan yg umum yaitu, "origin"
+git push origin --all -> Untuk mengirim semua branch yg ada di local kita
+git push --delete origin "namabranch" -> Untuk menghapus branch yang ada di remote
+git clone urlremoterepository -> Untuk melakukan clone
+git clone urlremoterepository "namafolder" -> Jika ingin melakukan clone, dengan nama folder yang berbeda dengan nama project remote repository
+
+  
 
 The Three States
 Git memiliki tiga state terhadap file kita: modified, staged, commited
