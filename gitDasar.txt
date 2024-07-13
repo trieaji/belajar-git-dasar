@@ -58,6 +58,11 @@ git checkout -b localbranch namaremote/remotebranch -> Untuk membuat local branc
 git fetch namaremote -> Melakukan fetch untuk semua branch di remote repository
 git fetch namaremote remotebranch -> Jika ingin melakukan fetch untuk branch tertentu saja di remote
 git pull origin namaremotebranch -> Untuk melakukan pull
+git push origin namatag -> Untuk mengirim Tag ke remote repository
+git push origin --tags -> Untuk mengirim semua Tag ke remote repository
+git fetch origin namatag -> Untuk mengambil Tag
+git fetch origin -> Untuk mengambil semua tag 
+git push --delete origin nametag -> Jika ingin menghapus tag di remote repository
 
 
 The Three States
