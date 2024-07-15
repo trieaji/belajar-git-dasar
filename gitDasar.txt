@@ -63,6 +63,11 @@ git push origin --tags -> Untuk mengirim semua Tag ke remote repository
 git fetch origin namatag -> Untuk mengambil Tag
 git fetch origin -> Untuk mengambil semua tag 
 git push --delete origin nametag -> Jika ingin menghapus tag di remote repository
+git submodule add urlgitrepo namafolder -> Untuk menambah submodule ke dalam git repository
+git submodule update --remote namafolder -> Jika terjadi perubahan di repo submodule, kita bisa mendapat update perubahannya
+git submodule update --remote -> Jika ingin semua submodule di update
+git submodule init -> Setelah melakukan clone, kita perlu melakukan perintah init untuk mengaktifkan module nya
+git submodule set-branch --branch namabranch namafolder -> Mengubah nama branch dan menentukan nama branch nya 
 
 
 The Three States
@@ -110,3 +115,6 @@ Squash berfungsi untuk melakukan penggabungan commit tersebut menjadi 1 commit s
 branch "master" merubah version.txt -> lalu commit
 branch "feature/merge-squash" merubah file1.txt -> lalu commit
 branch "feature/merge-squash" merubah file2.txt -> lalu commit
+
+Pull Request/Merge Request
+Fitur yang cocok digunakan untuk melakukan review otomatis di remote git repository, tanpa harus melakukan review dengan git diff 
